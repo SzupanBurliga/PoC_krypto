@@ -1,0 +1,9 @@
+[project]
+name = "pqcbench"
+version = "0.1.0"
+description = "Benchmark metod kryptoanalizy postkwantowej (PoC)"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

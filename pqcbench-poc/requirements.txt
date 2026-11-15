@@ -1,0 +1,6 @@
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+fpylll>=0.6.1
+cysignals>=1.11
+pytest>=8.0
