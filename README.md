@@ -1,4 +1,4 @@
-# README — PoC pqcbench
+# README — pqcbench
 
 ## Co to jest
 PoC do benchmarkowania ataków na LWE (post-kwantowa krypto). Ma 3 metody,
@@ -6,12 +6,11 @@ testy i wykresy.
 
 ## Jak odpalić
 
-1. Klonujesz repo, wchodzisz do folderu.
-2. **Windows?** Musisz mieć WSL2 (Ubuntu) — fpylll nie działa na czystym
+1. **Windows?** Musisz mieć WSL2 — fpylll nie działa na czystym
    Windowsie. `wsl --install` w PowerShellu jako admin, restart, dalej
    pracujesz w WSL.
-   Mac/Linux — bez problemu, lecisz dalej.
-3. W terminalu (WSL/Linux/Mac):
+   Mac/Linux — bez problemu
+3. (WSL/Linux/Mac):
 
 ```bash
 python3 -m venv .venv
@@ -19,7 +18,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Sprawdzenie, że działa:
+4. Sprawdzenie, czy działa:
 
 ```bash
 python -m pytest -v
@@ -41,6 +40,3 @@ Wyniki w `results/` (`runs.csv`, `summary.csv`, `plot.png`).
 cd NAZWA_REPO
 source .venv/bin/activate
 ```
-
-## Coś nie działa?
-Pisz na kanale — zazwyczaj brakujący pakiet systemowy pod fpylll.
